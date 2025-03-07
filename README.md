@@ -11,8 +11,9 @@ Projeto com a finalidade de praticar conceitos aprendidos desenvolvendo um softw
 # Técnologias utilizadas
 ### Front end
 <p>-React js</p>
+<p>-JavaScript </p>
+<p>-Integração com Back-end usando Axios</p>
 <p>-Vite para preparação de ambiente</p>
-<p>-Integração com o Back-end com Axios</p>
 
 ### Back end 
 <p>-Node js</p>
