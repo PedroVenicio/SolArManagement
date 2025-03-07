@@ -9,12 +9,12 @@ Projeto com a finalidade de praticar conceitos aprendidos desenvolvendo um softw
 <p>-Geração de relatório geral de serviços realizados</p>
 
 # Técnologias utilizadas
-<h1>Front end</h1>
+<h2>Front end</h2>
 <p>-React js</p>
 <p>-Vite para preparação de ambiente</p>
 <p>-Integração com o Back-end com Axios</p>
 
-<h1>Back end</h1>
+<h2>Back end</h2>
 <p>-Node js</p>
 <p>-Express js</p>
 <p>-Mongo DB</p>
