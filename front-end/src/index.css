@@ -1,0 +1,204 @@
+:root {
+  --dark-blue: #05012e;
+  --blue: #213070;
+  --light-blue: #577BC1;
+  --yellow: #DBBA00;
+  --light-yellow: #f1eee5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: white;
+  overflow: hidden;
+}
+
+#root {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.header {
+  background-color: var(--light-yellow);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid;
+  border-color: var(--light-blue);
+  border-width: 2px;
+}
+
+.header__logo {
+  width: 80px;
+  height: 90px;
+  margin-left: 10px;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.header__search--searchBar {
+  width: 600px;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border: solid;
+  border-width: 2px;
+  border-color: var(--light-blue);
+}
+
+.header__search--button {
+  background-color: var(--light-blue);
+  border: solid;
+  border-width: 2px;
+  border-color: var(--light-blue);
+  width: 50px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.header__search--buttonIcon {
+  color: var(--yellow);
+  height: 20px;
+  margin-top: 7px;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
+.tab {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  align-items: center;
+  padding-top: 70px;
+  row-gap: 40px;
+}
+
+.tab__button {
+  width: 175px;
+  height: 55px;
+  border: solid;
+  border-color: var(--yellow);
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: var(--light-blue);
+  cursor: pointer;
+}
+
+.tab__button--content {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  column-gap: 30px;
+}
+
+.tab__button--icon {
+  height: 30px;
+  width: 30px;
+}
+
+.screen {
+  width: 100%;
+  height: calc(100% - 75px);
+  overflow: auto;
+}
+
+.screen__button {
+  padding: 20px 0px 0px 50px;
+}
+
+.screen__card {
+  background-color: var(--light-yellow);
+  color: black;
+  height: auto;
+  margin: 30px 50px 50px 50px;
+  border-radius: 20px;
+  padding: 25px;
+  font-size: 20px;
+  word-wrap: break-word;
+  display: block;
+}
+
+.screen__card p {
+  color: var(--light-blue);
+  margin-bottom: 5px;
+}
+
+.card__header {
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  border-bottom: solid;
+  border-width: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__adress {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.card__street {
+  width: 45%;
+  line-clamp: 1;
+  border-bottom: solid;
+  border-width: 1px;
+  word-break: break-all;
+}
+
+.card__number {
+  width: 10%;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.card__neighborhood {
+  width: 45%;
+  line-clamp: 1;
+  border-bottom: solid;
+  border-width: 1px;
+  word-break: break-all;
+}
+
+.card__observations {
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.card__management {
+  display: flex;
+  column-gap: 40px;
+}
+
+.card__icon {
+  cursor: pointer;
+  height: 30px;
+}
+
+.card__icon:hover {
+  color: var(--light-blue)
+}
