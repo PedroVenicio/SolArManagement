@@ -1,5 +1,5 @@
 # SolArManagement
-Projeto com a finalidade de desenvolver um software web simples para uma oficina de refrigeração, buscando um ambiente que unifica clientes e um agendamento de chamadas e consertos. <br>
+Projeto com a finalidade de praticar conceitos aprendidos desenvolvendo um software web simples para uma oficina de refrigeração, buscando um ambiente que unifica clientes e um agendamento de chamadas e consertos. <br>
 
 # Funcionalidades iniciais:
 <p>-Gerenciamento de clientes</p>
