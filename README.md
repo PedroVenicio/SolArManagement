@@ -1,5 +1,5 @@
 # SolArManagement
-Projeto com a finalidade de desenvolver um software web simples para uma oficina de refrigeração, buscando um ambiente que unifica clientes e um agendamento de chamadas e consertos. <br>
+Projeto com a finalidade de praticar conceitos aprendidos desenvolvendo um software web simples para uma oficina de refrigeração, buscando um ambiente que unifica clientes e um agendamento de chamadas e consertos. <br>
 
 # Funcionalidades iniciais:
 <p>-Gerenciamento de clientes</p>
@@ -9,12 +9,13 @@ Projeto com a finalidade de desenvolver um software web simples para uma oficina
 <p>-Geração de relatório geral de serviços realizados</p>
 
 # Técnologias utilizadas
-<h1>Front end</h1>
+### Front end
 <p>-React js</p>
+<p>-JavaScript </p>
+<p>-Integração com Back-end usando Axios</p>
 <p>-Vite para preparação de ambiente</p>
-<p>-Integração com o Back-end com Axios</p>
 
-<h1>Back end</h1>
+### Back end 
 <p>-Node js</p>
 <p>-Express js</p>
 <p>-Mongo DB</p>
