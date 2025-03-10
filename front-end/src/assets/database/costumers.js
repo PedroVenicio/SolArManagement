@@ -12,13 +12,13 @@ export const arrayCostumers = [
     },
     {
         "id": 2,
-        "name": "Pedro Venicio Vassoler Schimitez",
-        "street": "Rua Dionisio Milioli",
-        "number": 310,
-        "neighborhood": "Nossa Senhora da Salete",
-        "services": ["Geladeira Electrolux", "Lavadoura Consul"],
-        "phone": 998381100,
-        "observations": "Casa muro de vidro"
+        "name": "Cristiane Pavei",
+        "street": "Rua da SATC",
+        "number": 110,
+        "neighborhood": "Bairro do Python",
+        "services": ["Geladeira Electrolux"],
+        "phone": 999999999,
+        "observations": "Casa com a logo do php na frente"
 
     },
     {

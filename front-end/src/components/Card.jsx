@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faTrash, faClockRotateLeft } from '@fortawesome/free-solid-svg-icons';
+import { ModalContext } from '../contexts/ModalContext';
 
 const Card = ({ data }) => {
+
+    const { modals, setModals } = useContext(ModalContext)
+
     return (
         <div key={data.id} className='screen__card'>
             <div className='card__header'>
@@ -28,11 +32,10 @@ const Card = ({ data }) => {
             </div>
 
             <div className='card__management'>
-                <FontAwesomeIcon icon={faClockRotateLeft} className='card__icon' />
-                <FontAwesomeIcon icon={faPenToSquare} className='card__icon' />
-                <FontAwesomeIcon icon={faTrash} className='card__icon' />
+                <FontAwesomeIcon icon={faClockRotateLeft} className='card__icon' onClick={() => setModals(1)}/>
+                <FontAwesomeIcon icon={faPenToSquare} className='card__icon' onClick={() => setModals(2)}/>
+                <FontAwesomeIcon icon={faTrash} className='card__icon' onClick={() => setModals(3)}/>
             </div>
-
         </div>
     )
 }

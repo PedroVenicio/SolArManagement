@@ -5,7 +5,7 @@ const Tab = () => {
     return (
         <div className='tab'>
             <Button type='Cliente' />
-            <Button type='Chamada' />
+            <Button type='Serviço' />
         </div>
     )
 }

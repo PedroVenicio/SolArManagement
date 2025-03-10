@@ -1,7 +1,8 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faTruckPickup, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faScrewdriverWrench, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { StatusContext } from '../contexts/StatusContext';
+
 
 const Button = ({ type }) => {
 
@@ -12,8 +13,8 @@ const Button = ({ type }) => {
     if (type.toLowerCase() === 'cliente') {
       return <FontAwesomeIcon icon={faUser} className='tab__button--icon' />
     }
-    else if (type.toLowerCase() === 'chamada') {
-      return <FontAwesomeIcon icon={faTruckPickup} className='tab__button--icon' />
+    else if (type.toLowerCase() === 'serviço') {
+      return <FontAwesomeIcon icon={faScrewdriverWrench} className='tab__button--icon'/>
     }
     else if (type.toLowerCase() === 'cadastrar') {
       return <FontAwesomeIcon icon={faPlus} className='tab__button--icon' />
@@ -21,7 +22,7 @@ const Button = ({ type }) => {
   }
 
   const handleClick = () => {
-    if (type.toLowerCase() === 'cliente' || type.toLowerCase() === 'chamada') {
+    if (type.toLowerCase() === 'cliente' || type.toLowerCase() === 'serviço') {
       setStatus(type.toLowerCase())
     }
     else {

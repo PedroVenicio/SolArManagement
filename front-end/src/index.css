@@ -202,3 +202,66 @@ body {
 .card__icon:hover {
   color: var(--light-blue)
 }
+
+.box {
+  position: absolute;
+  margin-left: 30%;
+  width: 1000px;
+  margin-top: calc(100vh - 30%);
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.delete {
+  background-color: var(--light-yellow);
+  color: black;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.delete p {
+  font-size: 30px;
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  column-gap: 30px;
+}
+
+.modal__confirm {
+  display: flex;
+  background-color: var(--light-blue);
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: var(--yellow);
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  column-gap: 10px;
+}
+
+.modal__cancel {
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: rgb(160, 0, 0);
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  column-gap: 10px;
+}

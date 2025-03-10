@@ -1,0 +1,52 @@
+import React, { useState, useContext, useEffect } from 'react';
+import { Modal, Box } from '@mui/material';
+import { ModalContext } from '../contexts/ModalContext';
+import Delete from './Delete';
+import Edit from './Edit';
+import History from './History';
+
+const Modals = () => {
+
+  const { modals, setModals } = useContext(ModalContext)
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    if (modals !== 0) {
+      setOpen(true)
+    }
+    else {
+      setOpen(false)
+    }
+  }, [modals])
+
+  const handleClose = () => {
+    setOpen(false)
+    setModals(0)
+  }
+
+  const modalType = () => {
+    if (modals === 1) {
+      return <History />
+    }
+    else if (modals === 2){
+      return <Edit />
+    }
+    else if (modals === 3){
+      return <Delete />
+    }
+  }
+
+
+  return (
+    <Modal
+      open={open}
+      onClose={handleClose}
+    >
+      <Box className='box'>
+        {modalType()}
+      </Box>
+    </Modal>
+  )
+}
+
+export default Modals
