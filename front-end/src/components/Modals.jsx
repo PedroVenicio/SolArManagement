@@ -5,7 +5,7 @@ import Delete from './Delete';
 import Edit from './Edit';
 import History from './History';
 
-const Modals = () => {
+const Modals = ({ data }) => {
 
   const { modals, setModals } = useContext(ModalContext)
   const [open, setOpen] = useState(false)
@@ -28,10 +28,10 @@ const Modals = () => {
     if (modals === 1) {
       return <History />
     }
-    else if (modals === 2){
-      return <Edit />
+    else if (modals === 2) {
+      return <Edit data={data}/>
     }
-    else if (modals === 3){
+    else if (modals === 3) {
       return <Delete />
     }
   }

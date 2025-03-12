@@ -101,6 +101,11 @@ body {
   border-radius: 10px;
   background-color: var(--light-blue);
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.tab__button:hover {
+  background-color:#2e5ab3;
 }
 
 .tab__button--content {
@@ -197,6 +202,8 @@ body {
 .card__icon {
   cursor: pointer;
   height: 30px;
+  transition: 0.2s;
+
 }
 
 .card__icon:hover {
@@ -247,6 +254,11 @@ body {
   font-size: 20px;
   color: white;
   column-gap: 10px;
+  transition: 0.2s;
+}
+
+.modal__confirm:hover {
+  background-color:#2e5ab3;
 }
 
 .modal__cancel {
@@ -264,4 +276,9 @@ body {
   font-size: 20px;
   color: white;
   column-gap: 10px;
+  transition: 0.2s;
+}
+
+.modal__cancel:hover {
+  background-color: rgb(172, 1, 1);
 }
