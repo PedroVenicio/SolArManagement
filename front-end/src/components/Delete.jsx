@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faX } from '@fortawesome/free-solid-svg-icons';
 import { ModalContext } from '../contexts/ModalContext';
 
-const Delete = () => {
+const Delete = ({ data }) => {
 
   const { modals, setModals } = useContext(ModalContext)
 
@@ -11,6 +11,9 @@ const Delete = () => {
     <div className='delete'>
       <div>
         <p>DESEJA DELETAR?</p>
+      </div>
+      <div>
+        Cliente: {data.name}
       </div>
       <div className='modal__buttons'>
         <div className='modal__confirm'>

@@ -8,10 +8,17 @@ const Edit = ({ data }) => {
   const { modals, setModals } = useContext(ModalContext)
 
   return (
-    <div className='delete'>
+    <div className='edit'>
       <div>
         <p>EDITANDO</p>
-        {data.name}
+      </div>
+      <div>
+        <input type='text' placeholder='Nome' value={data.name}/>
+        <input type='text' placeholder='Telefone' value={data.phone}/>
+        <input type='text' placeholder='Rua' value={data.street}/>
+        <input type='text' placeholder='Bairro' value={data.neighborhood}/>
+        <input type='text' placeholder='Numero' value={data.number}/>
+        <input type='text' placeholder='Observações' value={data.observations}/>
       </div>
       <div className='modal__buttons'>
         <div className='modal__confirm'>

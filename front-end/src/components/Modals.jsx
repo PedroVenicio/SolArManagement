@@ -29,10 +29,10 @@ const Modals = ({ data }) => {
       return <History />
     }
     else if (modals === 2) {
-      return <Edit data={data}/>
+      return <Edit data={data} />
     }
     else if (modals === 3) {
-      return <Delete />
+      return <Delete data={data}/>
     }
   }
 
