@@ -31,8 +31,9 @@ const Content = () => {
   return (
     <ModalProvider>
       <div className='screen'>
-        <div className='screen__button'>
+        <div className='screen__header'>
           <Button type='Cadastrar' />
+          <p>Gerenciamento de {status}</p>
         </div>
         {statusContent()}
         <Modals data={data}/>

@@ -1,6 +1,6 @@
 :root {
   --dark-blue: #05012e;
-  --light-gray: #dbdde6;
+  --light-gray: #cbd1e0;
   --light-blue: #4075df;
   --blue: #0f2b66;
   --light-yellow: #f3eeee;
@@ -70,7 +70,7 @@ body {
 }
 
 .header__search--buttonIcon {
-  color: var(--blue);
+  color: white;
   height: 20px;
   margin-top: 7px;
 }
@@ -124,8 +124,16 @@ body {
   overflow: auto;
 }
 
-.screen__button {
+.screen__header {
   padding: 20px 0px 0px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.screen__header p {
+  color: black;
+  font-size: 30px;
+  margin-left: 400px;
 }
 
 .screen__card {
@@ -282,7 +290,7 @@ body {
   margin-top: calc(100vh - 36%);
   margin-left: 500px;
   width: 1000px;
-  height: 500px;
+  height: 450px;
   text-align: center;
   padding-top: 50px;
   display: flex;
@@ -293,4 +301,32 @@ body {
 
 .edit p {
   font-size: 30px;
+}
+
+.edit input {
+  padding: 10px;
+  font-size: 15px;
+  border: solid;
+  border-width: 2px;
+  border-color: var(--light-blue);
+  border-radius: 10px;
+}
+
+.edit__content {
+  margin: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.edit__firstRow {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.edit__secondRow {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
 }
