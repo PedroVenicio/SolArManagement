@@ -133,7 +133,13 @@ body {
 .screen__header p {
   color: black;
   font-size: 30px;
-  margin-left: 400px;
+}
+
+.screen__title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
 .screen__card {
@@ -216,17 +222,17 @@ body {
 }
 
 .box {
-  position: absolute;
+  display: flex;
   width: 100%;
   height: 100%;
   font-family: "Montserrat", sans-serif;
   color: black;
+  justify-content: center;
+  align-items: center;
 }
 
 .delete {
   background-color: var(--light-yellow);
-  margin-top: calc(100vh - 32.6431%);
-  margin-left: 600px;
   width: 800px;
   height: 300px;
   text-align: center;
@@ -287,8 +293,6 @@ body {
 
 .edit {
   background-color: var(--light-yellow);
-  margin-top: calc(100vh - 36%);
-  margin-left: 500px;
   width: 1000px;
   height: 450px;
   text-align: center;
