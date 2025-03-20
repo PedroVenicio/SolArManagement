@@ -20,25 +20,37 @@ const Edit = ({ data }) => {
         <p>EDITANDO</p>
       </div>
       <div className='edit__content'>
-        <div className='edit__firstRow'>
-          <input type='text' placeholder='Nome' value={name} onChange={event => setName(event.target.value)} style={{ width: "70%", }} />
-          <input type='text' placeholder='Telefone' value={phone} onChange={event => setPhone(event.target.value)} style={{ width: "30%", }} />
+        <div className='edit__row'>
+          <div className='edit__inputs' style={{ width: "70%", }}>
+            <p2>Nome</p2> <input type='text' value={name} onChange={event => setName(event.target.value)} />
+          </div>
+          <div className='edit__inputs' style={{ width: "30%", }}>
+            <p2>Telefone</p2> <input type='text' value={phone} onChange={event => setPhone(event.target.value)} />
+          </div>
         </div>
-        <div className='edit__secondRow'>
-          <input type='text' placeholder='Rua' value={street} onChange={event => setStreet(event.target.value)} style={{ width: "45%", }} />
-          <input type='text' placeholder='Bairro' value={neighborhood} onChange={event => setNeighborhood(event.target.value)} style={{ width: "45%", }} />
-          <input type='text' placeholder='Numero' value={number} onChange={event => setNumber(event.target.value)} style={{ width: "10%", }} />
+        <div className='edit__row'>
+          <div className='edit__inputs' style={{ width: "45%", }} >
+            <p2>Rua</p2> <input type='text' value={street} onChange={event => setStreet(event.target.value)} />
+          </div>
+          <div className='edit__inputs' style={{ width: "45%", }}>
+            <p2>Bairro</p2> <input type='text' value={neighborhood} onChange={event => setNeighborhood(event.target.value)} />
+          </div>
+          <div className='edit__inputs' style={{ width: "10%", }}>
+            <p2>Número</p2> <input type='text' value={number} onChange={event => setNumber(event.target.value)} />
+          </div>
         </div>
-        <input type='text' placeholder='Observações' value={observations} onChange={event => setObservations(event.target.value)} />
+        <div className='edit__inputs'>
+          <p2>Observações</p2> <input type='text' value={observations} onChange={event => setObservations(event.target.value)} />
+        </div>
       </div>
       <div className='modal__buttons'>
         <div className='modal__confirm'>
           <FontAwesomeIcon icon={faCheck} />
-          confirmar
+          Confirmar
         </div>
         <div className='modal__cancel' onClick={() => setModals(0)}>
           <FontAwesomeIcon icon={faX} />
-          cancelar
+          Cancelar
         </div>
       </div>
     </div>

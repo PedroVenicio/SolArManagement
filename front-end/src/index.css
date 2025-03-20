@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color:var(--light-yellow);
+  background-color: var(--light-yellow);
   color: white;
   overflow: hidden;
 }
@@ -101,7 +101,7 @@ body {
 }
 
 .tab__button:hover {
-  background-color:#2e5ab3;
+  background-color: #2e5ab3;
 }
 
 .tab__button--content {
@@ -269,7 +269,7 @@ body {
 }
 
 .modal__confirm:hover {
-  background-color:#2e5ab3;
+  background-color: #2e5ab3;
 }
 
 .modal__cancel {
@@ -294,7 +294,7 @@ body {
 .edit {
   background-color: var(--light-yellow);
   width: 1000px;
-  height: 450px;
+  height: 520px;
   text-align: center;
   padding-top: 50px;
   display: flex;
@@ -307,9 +307,13 @@ body {
   font-size: 30px;
 }
 
+.edit p2 {
+  font-size: 20px;
+}
+
 .edit input {
   padding: 10px;
-  font-size: 15px;
+  font-size: 16px;
   border: solid;
   border-width: 2px;
   border-color: var(--light-blue);
@@ -323,14 +327,57 @@ body {
   row-gap: 20px;
 }
 
-.edit__firstRow {
+.edit__row {
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
 
-.edit__secondRow {
+.edit__inputs {
   display: flex;
-  justify-content: center;
-  column-gap: 10px;
+  flex-direction: column;
+  text-align: left;
 }
+
+.registerCostumer {
+  background-color: var(--light-yellow);
+  width: 1000px;
+  height: 520px;
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border-radius: 20px;
+}
+
+.registerCostumer p1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.registerCostumer input {
+  padding: 10px;
+  font-size: 16px;
+  border: solid;
+  border-width: 2px;
+  border-color: var(--light-blue);
+  border-radius: 10px;
+}
+
+.registerCostumer p2 {
+  font-size: 20px;
+}
+
+.registerCostumer__inputs {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.registerCostumer__row {
+  margin: 0px 20px 0px 20px;
+  display: flex;
+  column-gap: 20px;
+}
+

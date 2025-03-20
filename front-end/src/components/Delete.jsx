@@ -18,11 +18,11 @@ const Delete = ({ data }) => {
       <div className='modal__buttons'>
         <div className='modal__confirm'>
           <FontAwesomeIcon icon={faCheck} />
-          confirmar
+          Confirmar
         </div>
         <div className='modal__cancel' onClick={() => setModals(0)}>
           <FontAwesomeIcon icon={faX} />
-          cancelar
+          Cancelar
         </div>
       </div>
     </div>

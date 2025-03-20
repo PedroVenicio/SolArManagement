@@ -2,11 +2,13 @@ import React, { useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faScrewdriverWrench, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { StatusContext } from '../contexts/StatusContext';
+import { ModalContext } from '../contexts/ModalContext';
 
 
 const Button = ({ type }) => {
 
   const { status, setStatus } = useContext(StatusContext)
+  const { modals, setModals } = useContext(ModalContext)
 
 
   const getIcon = () => {
@@ -14,7 +16,7 @@ const Button = ({ type }) => {
       return <FontAwesomeIcon icon={faUser} className='tab__button--icon' />
     }
     else if (type.toLowerCase() === 'serviço') {
-      return <FontAwesomeIcon icon={faScrewdriverWrench} className='tab__button--icon'/>
+      return <FontAwesomeIcon icon={faScrewdriverWrench} className='tab__button--icon' />
     }
     else if (type.toLowerCase() === 'cadastrar') {
       return <FontAwesomeIcon icon={faPlus} className='tab__button--icon' />
@@ -25,8 +27,8 @@ const Button = ({ type }) => {
     if (type.toLowerCase() === 'cliente' || type.toLowerCase() === 'serviço') {
       setStatus(type.toLowerCase())
     }
-    else {
-      console.log('nao é mano')
+    else if (type.toLowerCase() === 'cadastrar') {
+      setModals(4)
     }
   }
 

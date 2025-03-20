@@ -5,7 +5,6 @@ import { arrayCalls } from '../assets/database/calls'
 import Card from './Card'
 import Button from './Button'
 import Modals from './Modals'
-import { ModalProvider } from '../contexts/ModalContext'
 import { SearchContext } from '../contexts/SearchContext'
 
 const Content = () => {
@@ -24,8 +23,7 @@ const Content = () => {
     filter.observations.toLowerCase().includes(searches.toLowerCase())
   )
 
-  const filterCall = arrayCostumers.filter(filter => filter.name.toLowerCase().includes(searches.toLowerCase()) ||
-    filter.street.toLowerCase().includes(searches.toLowerCase()) ||
+  const filterCall = arrayCalls.filter(filter => filter.street.toLowerCase().includes(searches.toLowerCase()) ||
     filter.neighborhood.toLowerCase().includes(searches.toLowerCase()) ||
     filter.phone.toString().includes(searches.toString()) ||
     filter.observations.toLowerCase().includes(searches.toLowerCase())
@@ -58,18 +56,16 @@ const Content = () => {
   }
 
   return (
-    <ModalProvider>
-      <div className='screen'>
-        <div className='screen__header'>
-          <Button type='Cadastrar' />
-          <div className='screen__title'>
-            <p>Gerenciamento de {status}</p>
-          </div>
+    <div className='screen'>
+      <div className='screen__header'>
+        <Button type='Cadastrar' />
+        <div className='screen__title'>
+          <p>Gerenciamento de {status}</p>
         </div>
-        {statusContent()}
-        <Modals data={data} />
       </div>
-    </ModalProvider>
+      {statusContent()}
+      <Modals data={data} status={status} />
+    </div>
   )
 }
 

@@ -4,8 +4,9 @@ import { ModalContext } from '../contexts/ModalContext';
 import Delete from './Delete';
 import Edit from './Edit';
 import History from './History';
+import RegisterCostumer from './RegisterCostumer';
 
-const Modals = ({ data }) => {
+const Modals = ({ data, status }) => {
 
   const { modals, setModals } = useContext(ModalContext)
   const [open, setOpen] = useState(false)
@@ -32,7 +33,10 @@ const Modals = ({ data }) => {
       return <Edit data={data} />
     }
     else if (modals === 3) {
-      return <Delete data={data}/>
+      return <Delete data={data} />
+    }
+    else if (modals === 4) {
+      return <RegisterCostumer status={status} />
     }
   }
 
