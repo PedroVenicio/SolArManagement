@@ -339,7 +339,7 @@ body {
   text-align: left;
 }
 
-.registerCostumer {
+.create {
   background-color: var(--light-yellow);
   width: 1000px;
   height: 520px;
@@ -351,12 +351,12 @@ body {
   border-radius: 20px;
 }
 
-.registerCostumer p1 {
+.create p1 {
   font-size: 30px;
   margin-bottom: 30px;
 }
 
-.registerCostumer input {
+.create input {
   padding: 10px;
   font-size: 16px;
   border: solid;
@@ -365,19 +365,22 @@ body {
   border-radius: 10px;
 }
 
-.registerCostumer p2 {
+.create p2 {
   font-size: 20px;
 }
 
-.registerCostumer__inputs {
+.create__inputs {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-.registerCostumer__row {
+.create__row {
   margin: 0px 20px 0px 20px;
   display: flex;
   column-gap: 20px;
 }
 
+.create__checkbox{
+  height: 25px;
+}

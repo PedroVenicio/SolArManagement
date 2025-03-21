@@ -4,7 +4,7 @@ import { ModalContext } from '../contexts/ModalContext';
 import Delete from './Delete';
 import Edit from './Edit';
 import History from './History';
-import RegisterCostumer from './RegisterCostumer';
+import Create from './Create';
 
 const Modals = ({ data, status }) => {
 
@@ -36,10 +36,9 @@ const Modals = ({ data, status }) => {
       return <Delete data={data} />
     }
     else if (modals === 4) {
-      return <RegisterCostumer status={status} />
+      return <Create status={status} />
     }
   }
-
 
   return (
     <Modal

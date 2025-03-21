@@ -23,9 +23,7 @@ const Content = () => {
     filter.observations.toLowerCase().includes(searches.toLowerCase())
   )
 
-  const filterCall = arrayCalls.filter(filter => filter.street.toLowerCase().includes(searches.toLowerCase()) ||
-    filter.neighborhood.toLowerCase().includes(searches.toLowerCase()) ||
-    filter.phone.toString().includes(searches.toString()) ||
+  const filterCall = arrayCalls.filter(filter => filter.phone.toString().includes(searches.toString()) ||
     filter.observations.toLowerCase().includes(searches.toLowerCase())
   )
 
