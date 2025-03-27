@@ -51,10 +51,20 @@ const Create = ({ status }) => {
       ) : (
         <></>
       )}
+      {status === 'serviço' ? (
+        <div className='create__costumerAssignment'>
+          <div className='create__checkView'>
+            Cadastrar novo cliente
+            <div className='create__checkbox'>
+              <input type='checkbox' style={{ height: "30px" }} value={check} onChange={() => setCheck(!check)} />
+            </div>
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
 
-      <div> {/* verificar como fica a disposição de informações da checkbox e atribuir a um cliente ja existente */}
-        Cadastrar novo cliente<input type='checkbox' className='create__checkbox' value={check} onChange={() => setCheck(!check)} />
-      </div>
+      {/* verificar como fica a disposição de informações da checkbox e atribuir a um cliente ja existente */}
 
       <div className='modal__buttons'>
         <div className='modal__confirm'>

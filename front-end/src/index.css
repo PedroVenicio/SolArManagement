@@ -381,6 +381,20 @@ body {
   column-gap: 20px;
 }
 
+.create__costumerAssignment {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px
+
+}
+
+.create__checkView {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
 .create__checkbox{
-  height: 25px;
+  height: 100%;
+  align-items: center;
 }
